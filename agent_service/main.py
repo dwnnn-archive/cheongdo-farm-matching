@@ -37,11 +37,10 @@ async def draft_posting(request: PostingDraftRequest) -> PostingDraftResponse:
         raise HTTPException(status_code=503, detail="Agent Framework is not configured.")
 
     try:
-        credential = (
-            ManagedIdentityCredential()
-            if os.getenv("WEBSITE_SITE_NAME") or os.getenv("CONTAINER_APP_NAME")
-            else DefaultAzureCredential()
-        )
+        if os.getenv("WEBSITE_SITE_NAME") or os.getenv("CONTAINER_APP_NAME"):
+            credential = ManagedIdentityCredential(client_id=os.getenv("AZURE_CLIENT_ID"))
+        else:
+            credential = DefaultAzureCredential()
         client = FoundryChatClient(
             project_endpoint=endpoint,
             model=model,
