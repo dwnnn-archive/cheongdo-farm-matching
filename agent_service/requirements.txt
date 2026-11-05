@@ -1,0 +1,4 @@
+agent-framework-foundry==1.16.0
+azure-identity>=1.17,<2
+fastapi>=0.115,<1
+uvicorn>=0.30,<1

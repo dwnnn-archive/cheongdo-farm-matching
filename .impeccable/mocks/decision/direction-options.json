@@ -1,0 +1,102 @@
+{
+  "title": "일손이음의 시각 방향 선택",
+  "question": "첫 시각 세계를 골라 주세요. 캐릭터 상품 진열과 실시간 전광판 방향은 일손이음의 작업 매칭을 더 명확히 하지 못해 다음 선택 라운드에 남겨 두었습니다.",
+  "options": [
+    {
+      "id": "assigned-plate-registry",
+      "kind": "assigned",
+      "label": "작업 기록 판면",
+      "kicker": "THE ROLL",
+      "lineage": "독립 디자인 연감의 도판 페이지",
+      "thesis": "각 농작업을 명료한 한 장의 기록으로 보여 주고, 조건 확인에서 신청까지 곧바로 잇습니다.",
+      "palette": ["#F5F4F6", "#FAF6F5", "#EEF3EF", "#16181A", "#DCDDF3", "#C9C7C4"],
+      "materials": ["비코팅 종이의 따뜻한 바탕", "가느다란 인쇄 규칙선", "도판 귀퉁이의 등록 십자선"],
+      "viewport": "왼쪽 메뉴에서 일자리와 내 신청을 전환하고, 첫 화면에서 지역·날짜를 고른 뒤 체험용 공고의 작업·일정·급여를 확인합니다. 등록 표식은 예시 공고를 실매물과 혼동하지 않도록 표시합니다.",
+      "risk": "편집 도록처럼 보여 실제 구인·신청 도구라는 인상이 약해질 수 있습니다.",
+      "raised": [
+        {
+          "from": "Microfiche Reader",
+          "raise": "환경 전체를 한 벌의 인쇄물처럼 다루는 규율을 받아들여, 종이 바탕과 짙은 잉크를 메뉴·공고·상태에 일관되게 적용합니다."
+        }
+      ],
+      "html": ".impeccable/mocks/decision/assigned-plate-registry.html"
+    },
+    {
+      "id": "pick-seasonal-almanac",
+      "kind": "pick",
+      "label": "농번기 계절 달력",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "농가의 절기 달력과 작업 수첩",
+      "thesis": "농번기의 날짜 흐름 위에서 필요한 일손과 가능한 일정을 먼저 찾습니다.",
+      "palette": ["#24483B", "#F4F0E7", "#D6613A", "#DCE7D8", "#1D2A24"],
+      "materials": ["작업 수첩의 크림색 종이", "잎과 감을 닮은 깊은 녹색·감색", "날짜를 또렷하게 하는 숫자 활자"],
+      "viewport": "일반적인 상단 탐색과 왼쪽 메뉴 아래, 가까운 작업 날짜를 가로 달력에서 고르고 해당 날짜의 공고를 목록으로 봅니다. 일정·급여 필터와 지원 버튼은 익숙한 웹 컨트롤을 유지합니다.",
+      "risk": "계절 달력이 실제 공고보다 앞서면 빈 날짜를 과하게 강조할 수 있습니다. 이 카테고리에서 가장 익숙한 선택이기도 합니다.",
+      "html": ".impeccable/mocks/decision/pick-seasonal-almanac.html"
+    },
+    {
+      "id": "challenger-orienteering-map",
+      "kind": "challenger",
+      "catalogId": "notation-diagram-systems-orienteering-map",
+      "label": "농촌 길찾기 지도",
+      "lineage": "오리엔티어링 지도 표기 체계",
+      "thesis": "작업 위치와 조건을 한눈에 찾아가는 지역 공고 목록입니다.",
+      "palette": ["#FFFFFF", "#6F7F42", "#E6C955", "#8A654C", "#507E9B", "#7046A8"],
+      "materials": ["지형 색상 체계", "가느다란 등고선", "선택한 공고에만 쓰는 보라색 강조"],
+      "viewport": "고정된 왼쪽 메뉴와 검색·지역 필터 뒤에 공고 목록을 두고, 선택한 공고의 위치와 조건을 옆 패널에 표시합니다. 지도 표식은 위치 탐색의 보조 수단으로만 씁니다.",
+      "case": "지역과 작업 위치를 먼저 찾는 방식은 청도 농가·청년의 상황에 맞지만, 지도만으로 작업·일정·급여가 바로 읽히지는 않습니다.",
+      "verdict": "competitive",
+      "risk": "지도 표현이 실제 제공되지 않는 길찾기·위치 데이터를 약속하는 것처럼 보일 수 있습니다.",
+      "html": ".impeccable/mocks/decision/challenger-orienteering-map.html"
+    },
+    {
+      "id": "challenger-crouwel-grid",
+      "kind": "challenger",
+      "catalogId": "crouwel-grid-specimen",
+      "label": "격자형 작업 목록",
+      "lineage": "Wim Crouwel의 셀 기반 타이포그래피 표본",
+      "thesis": "일정과 급여를 같은 격자에서 비교해 신청 결정을 빠르게 합니다.",
+      "palette": ["#F8F8F4", "#132D3C", "#D7E5EA", "#E5633D"],
+      "materials": ["셀 단위의 가는 기준선", "격자에 맞춰 자란 큰 숫자", "한 곳에만 쓰는 선명한 주황"],
+      "viewport": "표준 메뉴와 검색 필터 아래, 날짜·시간·급여를 정렬한 공고 행이 놓이고 선택 시 상세 내용이 오른쪽 패널에 표시됩니다. 격자는 타이포그래피와 정보 밀도에만 적용합니다.",
+      "case": "작업 조건을 정렬하는 데 유리하지만, 격자형 시각 언어만으로는 청도 농촌 일자리의 맥락을 충분히 드러내지 못합니다.",
+      "verdict": "competitive",
+      "risk": "큰 격자 숫자가 실제 정보보다 시각적으로 앞설 수 있습니다.",
+      "html": ".impeccable/mocks/decision/challenger-crouwel-grid.html"
+    },
+    {
+      "id": "challenger-boarding-board",
+      "kind": "challenger",
+      "catalogId": "vernacular-ephemera-boarding-pass-and-gate-board",
+      "label": "농촌 작업 시간표",
+      "lineage": "승차권과 출발 안내판",
+      "thesis": "날짜와 시작 시간 순으로 정렬된 공고에서 가능한 일을 고릅니다.",
+      "palette": ["#F4F1E9", "#252A2D", "#E6A938", "#B24B3A"],
+      "materials": ["시간표의 고정 열", "승차권의 분절 정보", "변경·마감에만 쓰는 경고색"],
+      "viewport": "검색·지역 메뉴와 표준 필터를 먼저 두고, 공고를 날짜와 시작 시간에 따라 행으로 배열합니다. 행을 고르면 작업 설명·급여·신청이 익숙한 상세 패널에 열립니다.",
+      "case": "시간 중심 구성은 청년이 근무 가능일을 찾는 데 명확하지만, 출발 안내판의 은유는 농가의 작업 성격과 잘 맞지 않습니다.",
+      "verdict": "competitive",
+      "risk": "실시간으로 바뀌는 안내판처럼 보이면 정적인 체험 공고에 대한 잘못된 기대를 만들 수 있습니다.",
+      "html": ".impeccable/mocks/decision/challenger-boarding-board.html"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "일반 구인 목록",
+    "thesis": "익숙한 일자리 탐색 방식을 다듬어 작업 조건을 빠르게 비교합니다.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB", "#E5E7EB"],
+    "materials": ["정돈된 여백", "명확한 글자 위계", "기능에 집중하는 목록"],
+    "viewport": "상단 탐색·왼쪽 메뉴·검색 필터 아래 공고 목록을 두고, 선택한 일자리의 상세와 신청을 오른쪽 패널에서 이어갑니다.",
+    "risk": "범주에서 기대하는 방식과 다르지 않아 다른 지역 구인 서비스와 구별되기 어렵습니다.",
+    "html": ".impeccable/mocks/decision/canon-category-standard.html"
+  },
+  "steer": true
+}
